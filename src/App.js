@@ -1,13 +1,15 @@
 import './App.css';
+import {useState} from 'react'
 
 function App() {
-
+  const [r, setR] = useState(0);
+  const [g, setG] = useState(0);
+  const [b, setB] = useState(0);
 
   function renderColor(){
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    document.getElementById("colorboard").style.backgroundColor= 'rgb(' + r + ',' + g + ',' + b + ')';
+    setR(Math.floor(Math.random() * 256));
+    setG(Math.floor(Math.random() * 256));
+    setB(Math.floor(Math.random() * 256));
   }
 
   
@@ -15,11 +17,13 @@ function App() {
   
   return (
     <>
-    <h1>Random Color Generator</h1>
+    <center><h1>Random Color Generator</h1></center>
+   
+    <button className='randombtn' onClick={renderColor}>Random color</button>
 
-    <button onClick={renderColor}>Random color</button>
-
-    <div id='colorboard'></div>
+    <div id='colorboard' style={{backgroundColor: `rgb(${r}, ${g}, ${b})`}}></div>
+    
+    <h3 className='rgbValues'>rgb({r}, {g}, {b})</h3>
 
     </>
   );

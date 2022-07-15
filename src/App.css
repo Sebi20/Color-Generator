@@ -1,5 +1,17 @@
 #colorboard{
-  width: 500px;
+  width: auto;
   height: 500px;
-  border: 2px solid aliceblue;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.rgbValues{
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.randombtn{
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
