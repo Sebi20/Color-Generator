@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Color-Generator/static/css/main.18f0fd12.css",
-    "main.js": "/Color-Generator/static/js/main.e6002abd.js",
+    "main.css": "/Color-Generator/static/css/main.f62452a9.css",
+    "main.js": "/Color-Generator/static/js/main.7e8b30ac.js",
     "index.html": "/Color-Generator/index.html",
-    "main.18f0fd12.css.map": "/Color-Generator/static/css/main.18f0fd12.css.map",
-    "main.e6002abd.js.map": "/Color-Generator/static/js/main.e6002abd.js.map"
+    "main.f62452a9.css.map": "/Color-Generator/static/css/main.f62452a9.css.map",
+    "main.7e8b30ac.js.map": "/Color-Generator/static/js/main.7e8b30ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.18f0fd12.css",
-    "static/js/main.e6002abd.js"
+    "static/css/main.f62452a9.css",
+    "static/js/main.7e8b30ac.js"
   ]
 }
