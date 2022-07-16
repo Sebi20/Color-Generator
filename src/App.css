@@ -1,9 +1,13 @@
+.header{
+  text-align: center;
+  color: aliceblue;
+}
+
 #colorboard{
   width: auto;
   height: 500px;
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .rgbValues{

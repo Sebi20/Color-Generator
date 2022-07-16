@@ -17,7 +17,7 @@ function App() {
   
   return (
     <>
-    <center><h1>Random Color Generator</h1></center>
+    <h1 className='header'>Random Color Generator</h1>
    
     <button className='randombtn' onClick={renderColor}>Random color</button>
 
