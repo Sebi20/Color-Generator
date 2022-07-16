@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Sebi20/Color-Generator/static/css/main.18f0fd12.css",
-    "main.js": "/Sebi20/Color-Generator/static/js/main.e6002abd.js",
-    "index.html": "/Sebi20/Color-Generator/index.html",
-    "main.18f0fd12.css.map": "/Sebi20/Color-Generator/static/css/main.18f0fd12.css.map",
-    "main.e6002abd.js.map": "/Sebi20/Color-Generator/static/js/main.e6002abd.js.map"
+    "main.css": "/Color-Generator/static/css/main.18f0fd12.css",
+    "main.js": "/Color-Generator/static/js/main.e6002abd.js",
+    "index.html": "/Color-Generator/index.html",
+    "main.18f0fd12.css.map": "/Color-Generator/static/css/main.18f0fd12.css.map",
+    "main.e6002abd.js.map": "/Color-Generator/static/js/main.e6002abd.js.map"
   },
   "entrypoints": [
     "static/css/main.18f0fd12.css",
