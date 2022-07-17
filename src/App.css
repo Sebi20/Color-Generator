@@ -17,9 +17,35 @@
 
 .randombtn{
   margin-left: 10px;
-  margin-bottom: 10px;
 }
 
-label{
+form{
+  margin-right: 10px;
+}
+
+.inputfld{
   color: aliceblue;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input{
+  border-radius: 7px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    margin-left:auto;
+    margin-right:auto;
+    width: 570px;
+  }
+
+  form{
+    margin-left:auto;
+    margin-right:auto;
+  }
 }

@@ -12,7 +12,8 @@ function App() {
     setB(Math.floor(Math.random() * 256));
   }
 
-  function renderColor(){
+  function renderColor(e){
+    e.preventDefault();
     setR(document.querySelectorAll("input")[0].value);
     setG(document.querySelectorAll("input")[1].value);
     setB(document.querySelectorAll("input")[2].value);
@@ -22,20 +23,24 @@ function App() {
   
   return (
     <>
-    <h1 className='header'>Random Color Generator</h1>
-   
-    <button className='randombtn' onClick={renderRandomColor}>Random color</button>
+    <h1 className='header'>Color Generator</h1>
+    <div className='inputfld'>
+      
+      <form>
+        <label>R:</label>
+        <input name='r' type='text'/>
+        <label>G:</label>
+        <input name='g' type='text'/>
+        <label>B:</label>
+        <input name='b' type='text'/>
+        <button className='getColor' onClick={renderColor}>Get Color</button>
+      </form>
 
-    <form onSubmit={renderColor}>
-      <label>R:</label>
-      <input name='r' type='text'/>
-      <label>G:</label>
-      <input name='g' type='text'/>
-      <label>B:</label>
-      <input name='b' type='text'/>
-      <input onClick={renderColor} type='button' value='Get Color'/>
-    </form>
+      <h3>-OR-</h3>
 
+      <button className='randombtn' onClick={renderRandomColor}>Get Random Color</button>
+
+    </div>
     <div id='colorboard' style={{backgroundColor: `rgb(${r}, ${g}, ${b})`}}></div>
     
     <h3 className='rgbValues'>rgb({r}, {g}, {b})</h3>
