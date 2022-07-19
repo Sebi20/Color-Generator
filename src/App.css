@@ -27,7 +27,7 @@ form{
   color: aliceblue;
   display:flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 10px;
 }
 
 
@@ -49,15 +49,19 @@ input{
   color: deepskyblue;
 }
 
-@media only screen and (max-width: 570px) {
-  body {
-    margin-left:auto;
-    margin-right:auto;
-    width: 570px;
+@media only screen and (max-width: 590px) {
+  input{
+    width: 35px;
+    margin-right: 5px;
   }
 
-  form{
-    margin-left:auto;
-    margin-right:auto;
+  .getColor{
+    width: 75px;
+  }
+
+  .inputfld{
+    display: grid;
+   place-items: center;
+   margin-bottom: 10px;
   }
 }
