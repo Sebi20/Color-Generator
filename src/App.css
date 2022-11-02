@@ -49,6 +49,18 @@ input{
   color: deepskyblue;
 }
 
+#rangeRed{
+  accent-color: red;
+}
+
+#rangeGreen{
+  accent-color: limegreen;
+}
+
+#rangeBlue{
+  accent-color: deepskyblue;
+}
+
 @media only screen and (max-width: 590px) {
   input{
     width: 35px;
@@ -65,3 +77,5 @@ input{
    margin-bottom: 10px;
   }
 }
+
+
