@@ -49,6 +49,16 @@ input{
   color: deepskyblue;
 }
 
+.colorRange{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.colorRange [type="range"]{
+  width: 150px;
+  height:20px;
+}
+
 #rangeRed{
   accent-color: red;
 }

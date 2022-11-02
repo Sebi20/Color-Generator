@@ -62,14 +62,15 @@ function App() {
 
     </div>
     <div id='colorboard' style={{backgroundColor: `rgb(${r}, ${g}, ${b})`}}></div>
-    
-    <h3 className='rgbValues'>rgb(<span id='red'>{r}</span>, <span id='green'>{g}</span>, <span id='blue'>{b}</span>)</h3>
 
-    <div>
+    <div className='colorRange'>
       <input id='rangeRed' type='range' name='rangeRed' min='0' max='255' onChange={renderColorFromRange}/>
       <input id='rangeGreen' type='range' name='rangeGreen' min='0' max='255' onChange={renderColorFromRange}/>
       <input id='rangeBlue' type='range' name='rangeBlue' min='0' max='255' onChange={renderColorFromRange}/>
     </div>
+    
+    <h3 className='rgbValues'>rgb(<span id='red'>{r}</span>, <span id='green'>{g}</span>, <span id='blue'>{b}</span>)</h3>
+
     
     </>
   );
