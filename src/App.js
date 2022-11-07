@@ -62,12 +62,11 @@ function App() {
       
       <form>
         <label style={{color:"red"}}>R:</label>
-        <input id='red' name='r' type='text' defaultValue={r}/>
+        <input  onChange={renderColor} id='red' name='r' type='text' defaultValue={r}/>
         <label style={{color:"limegreen"}}>G:</label>
-        <input id='green' name='g' type='text' defaultValue={g}/>
+        <input  onChange={renderColor} id='green' name='g' type='text' defaultValue={g}/>
         <label style={{color:"deepskyblue"}}>B:</label>
-        <input id='blue' name='b' type='text' defaultValue={b}/>
-        <button className='getColor' onClick={renderColor}>Get Color</button>
+        <input onChange={renderColor} id='blue' name='b' type='text' defaultValue={b}/>
       </form>
 
       <h3>-OR-</h3>
