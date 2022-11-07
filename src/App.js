@@ -15,6 +15,20 @@ function App() {
     setB(Math.floor(Math.random() * 256));
   }
 
+  function renderRandomRed(){
+    setR(Math.floor(Math.random() * 256));
+  }
+
+  function renderRandomGreen(){
+     
+    setG(Math.floor(Math.random() * 256));
+  }
+
+  function renderRandomBlue(){
+     
+    setB(Math.floor(Math.random() * 256));
+  }
+
   $("input[name = r").val(r);
   $("input[name = g").val(g);
   $("input[name = b").val(b);
@@ -59,6 +73,14 @@ function App() {
       <h3>-OR-</h3>
 
       <button className='randombtn' onClick={renderRandomColor}>Get Random Color</button>
+
+      <h3>-OR-</h3>
+
+      <div className='randomColors'>
+        <button className='randomRed' onClick={renderRandomRed}>Random Red</button>
+        <button className='randomGreen' onClick={renderRandomGreen}>Random Green</button>
+        <button className='randomBlue' onClick={renderRandomBlue}>Random Blue</button>
+      </div>
 
     </div>
     <div id='colorboard' style={{backgroundColor: `rgb(${r}, ${g}, ${b})`}}></div>
