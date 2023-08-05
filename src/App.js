@@ -1,6 +1,7 @@
 import './App.css';
 import {useState} from 'react';
 import $ from 'jquery';
+import Hex from './Hex';
 
 function App() {
 
@@ -9,10 +10,6 @@ function App() {
   const [g, setG] = useState(0);
   const [b, setB] = useState(0);
 
-  // Hex code states
-  const [hexRed, setHexRed] = useState("");
-  const [hexGreen, setHexGreen] = useState("");
-  const [hexBlue, setHexBlue] = useState("");
 
 
   $("input[name = r").val(r);
@@ -51,16 +48,18 @@ function App() {
 
     // makeZeroDefault();
     
-    setR($("input[name = r").val());
-    setG($("input[name = g").val());
-    setB($("input[name = b").val());
+
+    // Setting the vales taken from the text inputs and setting them to the rgb
+    setR(parseInt($("input[name = r").val()));
+    setG(parseInt($("input[name = g").val()));
+    setB(parseInt($("input[name = b").val()));
   }
 
   function renderColorFromRange(e){
     e.preventDefault();
-    setR($("input[name = rangeRed").val());
-    setG($("input[name = rangeGreen").val());
-    setB($("input[name = rangeBlue").val());
+    setR(parseInt($("input[name = rangeRed").val()));
+    setG(parseInt($("input[name = rangeGreen").val()));
+    setB(parseInt($("input[name = rangeBlue").val()));
 
   }
  
@@ -110,7 +109,8 @@ function App() {
     
     <h3 className='rgbValues'>rgb(<span id='red'>{r}</span>, <span id='green'>{g}</span>, <span id='blue'>{b}</span>)</h3>
 
-    
+    <Hex red={r} green = {g} blue={b}/>
+      
     </>
   );
 
