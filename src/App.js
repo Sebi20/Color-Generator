@@ -10,12 +10,12 @@ function App() {
   const [g, setG] = useState(0);
   const [b, setB] = useState(0);
 
-
-
+  // Updating the number inputs when a change is made from another input
   $("input[name = r").val(r);
   $("input[name = g").val(g);
   $("input[name = b").val(b);
 
+  // Updating the range inputs when a change is made from another input
   $("input[name = rangeRed").val(r);
   $("input[name = rangeGreen").val(g);
   $("input[name = rangeBlue").val(b);
@@ -49,12 +49,13 @@ function App() {
     // makeZeroDefault();
     
 
-    // Setting the vales taken from the text inputs and setting them to the rgb
+    // Setting the vales taken from the number inputs and setting them to the rgb
     setR(parseInt($("input[name = r").val()));
     setG(parseInt($("input[name = g").val()));
     setB(parseInt($("input[name = b").val()));
   }
 
+  // Setting the colors on the page from the range inputs
   function renderColorFromRange(e){
     e.preventDefault();
     setR(parseInt($("input[name = rangeRed").val()));
